@@ -83,7 +83,7 @@ def countdown(time):
     if time > 0:
         time -= 1
         global timer
-        timer = window.after(20, countdown, time)
+        timer = window.after(1000, countdown, time)
     else:
         start_timer()
         if reps % 2 == 0:
